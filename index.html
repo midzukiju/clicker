@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кликер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Суперкликер</h1>
+        <p>Нажимай на кнопку, чтобы счётчик очков рос, и покупай улучшения!</p>
+    </div>
+
+    <div class="main">
+        <div class="score" id="score">0</div>
+
+        <div class="stats">
+            <p>Всего кликов: <span id="clicks-count">0</span></p>
+            <p>Сила клика: <span id="click-power">1</span></p>
+            <p>Очков в сек: <span id="auto-power">0</span></p>
+        </div>
+
+        <p id="message" class="message">Ты пока в самом начале</p>
+
+        <button id="click-btn">Кликнуть</button>
+        <button id="upgrade-btn" disabled>Улучшить клик (Цена: <span id="upgrade-cost">10</span>)</button>
+        <button id="auto-btn" disabled>Автоклик +1/сек (Цена: <span id="auto-cost">25</span>)</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

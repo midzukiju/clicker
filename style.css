@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 239, 255);
+}
+
+.header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.main {
+    width: 400px;
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    margin: 40px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.score {
+    font-size: 58px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    font-size: 13px;
+}
+
+.message {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(60, 136, 78);
+    min-height: 20px;
+}
+
+button {
+    height: 48px;
+    box-shadow: 0px 8px 0px rgb(0, 112, 15);
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    background-color: rgb(60, 136, 78);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+button:hover:not(:disabled) {
+    background-color: rgb(78, 163, 98);
+}
+
+button:active:not(:disabled) {
+    box-shadow: 0px 0px 0px rgb(0, 112, 15);
+    transform: translateY(6px);
+}
+
+button:disabled {
+    background-color: #cccccc;
+    box-shadow: 0px 8px 0px #999999;
+    cursor: not-allowed;
+}
